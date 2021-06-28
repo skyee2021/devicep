@@ -87,6 +87,7 @@ GEM
       warden (~> 1.2.3)
     erubi (1.10.0)
     ffi (1.15.3)
+    foreman (0.87.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.10)
@@ -216,7 +217,8 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
-  devise
+  devise (~> 4.8)
+  foreman
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 5.0)

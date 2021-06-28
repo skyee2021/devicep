@@ -1,0 +1,12 @@
+hi
+<div>
+  <% if user_signed_in? %>
+  <%= current_user.email %>
+  <%= link_to '登出', destroy_user_session_path, data:{method: 'delete'}, class:"user-signout" %> |
+  <%= link_to('修改密碼', edit_registration_path(:user)) %>
+  <% else %>
+    <li><%= link_to('註冊', new_user_registration_path(:user), class: "lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-white mx-3 md:mx-0") %></li>
+    <li><%= link_to('登入', new_user_session_path(:user), class: "lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-white mx-3 md:mx-0") %></li>
+    <% end %>
+          
+</div>
